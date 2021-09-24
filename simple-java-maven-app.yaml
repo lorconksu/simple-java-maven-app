@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: Simple Java Project
+  description: A Simple java Project
+  tags:
+    - java
+    - example
+  links:
+    - url: https://idm1.yiuhouse.local/ipa/ui/#/e/user/search
+      title: Users
+      icon: user
+    - url: https://idm1.yiuhouse.local/ipa/ui/#/e/group/search
+      title: Group
+      icon: group
+    - url: https://console-openshift-console.apps.openshift.yiuhouse.local/
+      title: Openshift
+      icon: cloud
+    - url: https://rhvmgr.yiuhouse.local/
+      title: Red Hat Virtualization
+      icon: cloud
+    - url: https://yiucloud.atlassian.net/wiki/spaces/~627717772/pages/884737/Lab+Information
+      title: Inventory
+      icon: dashboard
+
+spec:
+  type: service
+  lifecycle: experimental
+  owner: team-a
+  system: artist-engagement-portal
+  dependsOn: ['resource:artists-db']
