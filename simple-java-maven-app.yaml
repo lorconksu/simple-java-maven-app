@@ -3,6 +3,8 @@ kind: Component
 metadata:
   name: simple-java-project
   description: A Simple java Project
+  annotations:
+    jenkins.io/github-folder: 'WilliamYiu/simple-java-maven-app'
   tags:
     - java
     - example
